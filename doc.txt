@@ -1,0 +1,83 @@
+earlyAi:
+auto code geneartion 
+ide integration
+generate test
+simple navigation
+high quality test
+
+
+
+//here we will use express postgresql docker for porper backend setup which will run in every system
+
+
+setup for docker :
+-------------------------------------------------------------
+
+Install Docker Desktop
+
+Run the downloaded installer .exe.
+
+During installation:
+
+Check “Install required Windows components for WSL 2” if you are on Windows Home.
+
+Leave other options default unless you want to change paths.
+
+Click Install → wait until it finishes.
+
+Click Close and restart your computer if prompted.
+
+1️⃣ Check if Docker is working
+
+Open your terminal and run:
+
+docker --version
+
+
+You should see something like:
+
+Docker version 24.0.0, build xxxxx
+
+
+Then check if Docker can run containers:
+
+docker run hello-world
+
+
+This will pull a test image and run it.
+
+If it works, Docker is installed and running properly.
+-------------
+
+C:\Users\pramendra singh>docker run hello-world Unable to find image 'hello-world:latest' locally
+
+Ah! That message is normal the first time you run it. Let me explain step by step.
+
+When you run:
+
+docker run hello-world
+
+
+Docker looks for the hello-world:latest image locally on your machine.
+
+Since it’s not there yet (Unable to find image 'hello-world:latest' locally), Docker automatically downloads it from Docker Hub.
+
+After downloading, it runs the container and prints a “Hello from Docker!” message.
+
+So, this message is not an error, it’s just telling you it’s fetching the image.
+
+✅ Next steps:
+
+Wait a few seconds for Docker to download the image and run it.
+
+You should see output like this:
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+
+If you see that, Docker is installed and working fine.
+
+After that, we can move to running PostgreSQL in Docker and connecting to it.
+
+-------------------------------------------------------------
